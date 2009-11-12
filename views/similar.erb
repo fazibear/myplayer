@@ -1,0 +1,8 @@
+<% if @result.any? %>
+  <% @result.each do |res| %>
+      <li><a href="#"><%= res %></a></li>
+    <% end %>
+  <br class="cb"/>
+<% else %>
+  <span>There is no similar artists...</span>
+<% end %>

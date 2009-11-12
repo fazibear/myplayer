@@ -1,0 +1,57 @@
+body {
+  background: #000;
+  color: #FFF;
+  width: 800px;
+  margin: auto auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#player {
+  float: right;
+  width: 450px;
+  height: 345px;
+}
+
+#search {
+  height: 245px;
+  width: 300px;
+}
+
+#similar {
+  min-height: 190px;
+}
+
+#similar ul {
+  margin: 0 20px;
+}
+
+#similar li {
+  float: left;
+  list-style-position:inside;
+  margin-left: 8px;
+  text-align: justify;
+}
+
+.loading {
+  background: #000 url(/loading.gif) center center no-repeat;
+}
+
+
+a, a:hover, a:visited {
+  color: #aaa
+}
+
+#footer { 
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+.cb {
+  clear: both;
+  width: 0px;
+  height: 0px;
+}

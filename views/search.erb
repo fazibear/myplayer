@@ -1,0 +1,7 @@
+<% if @result.any? %>
+  <% @result.each do |res| %>
+    <li><a href="#" class="<%= res[:code]%>"><%= res[:name] %></a></li>
+  <% end %>
+<% else %>
+  <span>There is no serch results...</span>
+<% end %>
