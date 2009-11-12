@@ -14,32 +14,7 @@
       Myspace Music Player
     </h1>
     <div id="player" class="loading">
-
-      <div id="profile_mp3Player" style="width: auto; height:auto;">
-          <object id="shell" name="shell" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="450" height="345" align="middle">
-                <param name="movie" value="http://lads.myspacecdn.com/videos/Main.swf">
-                <param name="quality" value="high">
-                <param name="wmode" value="transparent">
-                <param name="allowscriptaccess" value="always">
-                <param name="flashvars" value="uid=-1&amp;pcc=pl-PL&amp;cc=pl-PL&amp;el=http%3a%2f%2fwww.myspace.com%2findex.cfm%3ffuseaction%3duser.viewProfile%26vanity%3dmetallica%26&amp;pertid=faa3f6713df8bf360000000000000000&amp;pguid=7a8d07588b80416ebd8296cb4a9c274c&amp;hash=MIGnBgorBgEEAYI3WAOnoIGYMIGVBgorBgEEAYI3WAMBoIGGMIGDAgMCAAECAmYDAgIAwAQI8bHD%252bWPsj7MEEA%252fqStK5ltAoBfwKFUQiLY0EWH8J%252ftOfsstITW07lVcptn8RyIyc4lN59GbDuj%252bGzmqsA4o%252bNgTT%252bCS5wf5LjYVvPd9Fjyx2VSCf9lJF26Cli0zUpoJXupmPy0ttN0Sg2OIljZHmLhu%252bhAA%253d&amp;skinid=17&amp;skin=http%3a%2f%2flads.myspacecdn.com%2fvideos%2fartistInternational.xml&amp;isus=false&amp;on=1&amp;afsongs=4&amp;ayt=15&amp;c1=transparent&amp;c2=transparent&amp;c3=transparent&amp;c4=transparent&amp;plid=11523&amp;profid=4689215&amp;ptype=4&amp;artid=10453567&amp;pmix=False&amp;shuffle=True&amp;ap=1&amp;fast=5&amp;fatt=0&amp;fadd=0&amp;fapf=True&amp;rast=5&amp;ratt=0&amp;radd=0&amp;rapf=True&amp;bast=-1&amp;batt=-1&amp;badd=-1&amp;bapf=False&amp;aytast=-1&amp;aytatt=-1&amp;aytadd=-1&amp;xad=1&amp;yad=1&amp;zad=1&amp;v=1.0.1.177&amp;noalbslider=1&amp;novidslider=0&amp;t=1&amp;mt=audio&amp;logerr=0&amp;facp=0&amp;racp=0&amp;bacp=0">
-                <!--[if !IE]>--><object type="application/x-shockwave-flash" data="http://lads.myspacecdn.com/videos/Main.swf" width="450" height="345" align="middle">
-                        <param name="quality" value="high">
-                        <param name="wmode" value="transparent">
-                        <param name="allowscriptaccess" value="always">
-                        <param name="flashvars" value="uid=-1&amp;pcc=pl-PL&amp;cc=pl-PL&amp;el=http%3a%2f%2fwww.myspace.com%2findex.cfm%3ffuseaction%3duser.viewProfile%26vanity%3dmetallica%26&amp;pertid=faa3f6713df8bf360000000000000000&amp;pguid=7a8d07588b80416ebd8296cb4a9c274c&amp;hash=MIGnBgorBgEEAYI3WAOnoIGYMIGVBgorBgEEAYI3WAMBoIGGMIGDAgMCAAECAmYDAgIAwAQI8bHD%252bWPsj7MEEA%252fqStK5ltAoBfwKFUQiLY0EWH8J%252ftOfsstITW07lVcptn8RyIyc4lN59GbDuj%252bGzmqsA4o%252bNgTT%252bCS5wf5LjYVvPd9Fjyx2VSCf9lJF26Cli0zUpoJXupmPy0ttN0Sg2OIljZHmLhu%252bhAA%253d&amp;skinid=17&amp;skin=http%3a%2f%2flads.myspacecdn.com%2fvideos%2fartistInternational.xml&amp;isus=false&amp;on=1&amp;afsongs=4&amp;ayt=15&amp;c1=transparent&amp;c2=transparent&amp;c3=transparent&amp;c4=transparent&amp;plid=11523&amp;profid=4689215&amp;ptype=4&amp;artid=10453567&amp;pmix=False&amp;shuffle=True&amp;ap=1&amp;fast=5&amp;fatt=0&amp;fadd=0&amp;fapf=True&amp;rast=5&amp;ratt=0&amp;radd=0&amp;rapf=True&amp;bast=-1&amp;batt=-1&amp;badd=-1&amp;bapf=False&amp;aytast=-1&amp;aytatt=-1&amp;aytadd=-1&amp;xad=1&amp;yad=1&amp;zad=1&amp;v=1.0.1.177&amp;noalbslider=1&amp;novidslider=0&amp;t=1&amp;mt=audio&amp;logerr=0&amp;facp=0&amp;racp=0&amp;bacp=0">
-                        <!--<![endif]--><div id="flUgSwfChk">
-                                  <h5 id="flUgH1">Pobierz Flash Player!</h5>
-
-                                          <p id="flUgP">By pos&Aring;&#130;ucha&Auml;&#135; tego materia&Aring;&#130;u lub go obejrze&Auml;&#135;, musisz pobra&Auml;&#135; nowsz&Auml;&#133; wersj&Auml;&#153; Flash Playera.</p>
-                                                  <a href="#" onclick="(function(srcEl){srcEl.href = FlashUpgrade.GetFlashUpgradeURL(true)})(this)"><img id="flUgImg" src="http://x.myspacecdn.com/modules/musicv2/static/img/flash_logo_player.jpg"></a>
-                                                        </div>
-
-                                                              <!--[if !IE]>-->
-                                                                  </object>
-                                                                      <!--<![endif]-->
-                                                                        </object>
-                                                                      </div>
-    
+      <%= @last_player %>
     </div>
     <div>
       <input id="query"/>
@@ -49,29 +24,12 @@
       Search Results:
     </h2>
     <ul id="search">
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
+      <span>Search something !</span>
     </ul>
     <h2>
       Similar Artists:
     </h2>
     <ul id="similar">
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
-      <li>Search</li>
     </ul>
     <div id="footer">
       <p>
