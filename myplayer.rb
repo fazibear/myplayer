@@ -15,6 +15,7 @@ LAST_FM_SIMILAR_URL = "http://ws.audioscrobbler.com/2.0/artist/%s/similar"
 LAST_FM_SIMILAR_XPATH = "/similarartists/artist/name"
 
 get '/' do
+  @@last_player ||= ''
   @last_player = @@last_player
   erb :index
 end
@@ -50,7 +51,7 @@ get '/player/:profile' do
     end
   rescue => e
   end
-  @@player = @player
+  @@last_player = @player
   erb :player
 end
 
